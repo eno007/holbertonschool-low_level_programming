@@ -17,15 +17,15 @@ int main(void)
 	{
 		for (n = '0'; n <= '9'; n++)
 		{
-			for (m = N ; m <= '9'; m++)
+			for (m = N; m <= '9'; m++)
 			{
 				for (M = n + 1; M <= '9'; M++)
 				{
 					putchar(N);
 					putchar(n);
 					putchar(' ');
-					putchar(M);
 					putchar(m);
+					putchar(M);
 
 					if (!((N == '9' && n == '8') && (M == '9' && m == '9')))
 					{
@@ -33,10 +33,10 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				m = '0';
+				M = '0';
 			}
 		}
 	}
 	putchar('\n');
-	return (0);
+	return (1);
 }
