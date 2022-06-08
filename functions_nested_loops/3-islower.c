@@ -2,8 +2,8 @@
 
 /**
  * _islower -- entry point
- * prints as var c requested
- * Return: int c (Success)
+ * @c is the character that the code will check
+ * Return: 1 if lowercase or 0 if UPPERCASE
  */
 int _islower(int c)
 {
