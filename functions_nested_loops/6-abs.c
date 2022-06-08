@@ -2,7 +2,7 @@
 
 /**
  * _abs -- entry point
- * @int: character that the code will check
+ * @n: character that the code will check
  * Return: 0 or != 0
  */
 int _abs(int n)
