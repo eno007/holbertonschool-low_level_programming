@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit -- entry point
- * @n: character that the code will check
+ * @n: character that the code will check.
  * Return: 0 or != 0
  */
 int print_last_digit(int n)
