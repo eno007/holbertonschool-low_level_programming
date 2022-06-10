@@ -13,12 +13,12 @@ int main(void)
 
 	i = 0;
 
-	while (i < 10)
-	/* This loop will be infinite loop as i is not going to be incremented never*/
-	{
-		putchar(i);
-		/* You can not use command putchar to print an intiger only if you add '0'*/
-	}
+	/**
+	 * while (i < 10)
+	 * {
+	 * putchar(i);
+	 * }
+	*/
 
 	printf("Infinite loop avoided! \\o/\n");
 
