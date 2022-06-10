@@ -29,7 +29,7 @@ int main(void)
 	for  (; c < 99; c++)
 	{
 		o = (a_t + b_t) / 1000000000;
-		sum_t = (a_t + b_t) - (1000000000 * o);
+		sum_t = (a_t + b_t)-(1000000000 * o);
 		sum_h = (a_h + b_h) + o;
 		printf(", %lu%lu", sum_h, sum_t);
 		a_h = b_h;
