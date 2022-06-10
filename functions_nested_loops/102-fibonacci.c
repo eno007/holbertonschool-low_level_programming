@@ -11,7 +11,7 @@ int main(void)
 	int num;
 
 	printf("%li, %li", f1, f2);
-	for (num = 1; num <= 51; num++)
+	for (num = 1; num <= 48; num++)
 	{
 		fn = f1 + f2;
 		printf(", %li", fn);
