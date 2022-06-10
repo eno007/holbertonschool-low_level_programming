@@ -9,7 +9,7 @@ int main(void)
 	long f2 = 2;
 	long fn;
 	int num;
-	
+
 	printf("%li, %li", f1, f2);
 	for (num = 1; num <= 51; num++)
 	{
