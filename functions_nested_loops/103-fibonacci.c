@@ -19,7 +19,6 @@ int main(void)
 		{
 			sum += f1;
 		}
-	}
 	printf("%li\n", sum);
 
 	return (0);
