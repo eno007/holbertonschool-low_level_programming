@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * main - start
- * @i: 
  * Return: 0
  */
 int main(void)
