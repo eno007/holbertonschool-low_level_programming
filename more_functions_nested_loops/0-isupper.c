@@ -1,17 +1,13 @@
-#include "main.c"
 #include "main.h"
 /**
- * main - check the code.
- *
+ * _isupper - check the code.
+ * @c: to be checked
  * Return:  0 or 1.
  */
 int _isupper(int c)
 {
-	for (c = 65; c <= 122; c++)
-	{
-		if (c == 67)
-			return (1);
-		else
-			return (0);
-	}
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
