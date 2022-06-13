@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - check the code.
- * 
- * Return:  0 
+ * main - start
+ * @i: 
+ * Return: 0
  */
 int main(void)
 {
@@ -22,7 +21,7 @@ int main(void)
 		{
 			if (i < 100)
 				printf("Buzz ");
-			else
+			elske
 				printf("Buzz");
 		}
 	}
