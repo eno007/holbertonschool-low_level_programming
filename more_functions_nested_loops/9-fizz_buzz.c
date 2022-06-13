@@ -21,7 +21,7 @@ int main(void)
 		{
 			if (i < 100)
 				printf("Buzz ");
-			elske
+			else
 				printf("Buzz");
 		}
 	}
