@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_square - check the code.
- * @size: to check
- * Return:  0 or 1.
+ * main - check the code.
+ * 
+ * Return:  0 
  */
-int main()
+int main(void)
 {
 	int i;
 
@@ -14,11 +14,11 @@ int main()
 	{
 		if (i % 5 != 0 && i % 3 != 0)
 			printf("%i ", i);
-		if (i % 15 == 0)
+		else if ((i % 3 == 0) && (i % 5 == 0))
 			printf("FizzBuzz ");
-		if (i % 3 == 0)
+		else if (i % 3 == 0)
 			printf("Fizz ");
-		if (i % 5 == 0)
+		else if (i % 5 == 0)
 			printf("Buzz ");	
 	}
 	printf("\n");
