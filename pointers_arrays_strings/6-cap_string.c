@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *string_toupper - check the code
+ * *cap_string - check the code
  * @s: to check
  * Return: len
  */
