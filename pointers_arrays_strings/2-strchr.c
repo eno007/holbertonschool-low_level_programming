@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _strchr - check the code
  * @s: to check
@@ -15,5 +14,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 			return (s + i);
 	}
-		return('\0');
+	if (s[i] == c)
+		return (s + i);
+	return ('\0');
 }
