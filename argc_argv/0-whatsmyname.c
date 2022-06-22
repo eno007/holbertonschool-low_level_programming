@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * main - enters program
- * @c: The character to print
+ * @argc: The character to check
+ * @argv: The character to print
  * Return: On success 1.
  */
 int main(int argc, char *argv[])
