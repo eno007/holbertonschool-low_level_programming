@@ -5,7 +5,7 @@
  * str_concat - enters program
  * @s1: The character to print
  * @s2: The character to print
- * Return: On success 1.
+ * Return: On success joined else NULL
  */
 
 char *str_concat(char *s1, char *s2)
@@ -14,9 +14,9 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0, length = 0, length1 = 0;
 
 	if (s1 == NULL)
-		return (NULL);
+		return ("");
 	if (s2 == NULL)
-		return (NULL);
+		return ("");
 	while (*(s1 + i))
 	{
 		length++;
