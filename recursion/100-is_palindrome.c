@@ -12,19 +12,13 @@ int _find_length(char *s)
         return (1 + (_find_length(s)));
 }
 
-int _compare_head_tail(char *s, int i, int a, int b)
+int _compare(char *a, char *b)
 {
-	i = _find_length(s);
-
-        for (a = i / 2; a >= 0; a--)
-        {
-                for (b = (i / 2) + 1; b < '\0'; b++)
-                {
-                        if (s[a] != s[b] && ((s[0] || s[1]) != '\0'))
-				return (0);
-                }
-        }
-	return (_compare_head_tail(s, i));
+	if (a >= b)
+		return (1);
+	if (*a == *b)
+		return (_compare(a + 1, b - 1));
+	return (0);
 }
 
 /**
@@ -34,5 +28,7 @@ int _compare_head_tail(char *s, int i, int a, int b)
  */
 int is_palindrome(char *s)
 {
-	return (_compare_head_tail(s, a, b, is_palindrome(s)));
+	int length = _find_length(s);
+
+	return (_compare(s, (s + length - 1)));
 }
