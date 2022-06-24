@@ -6,12 +6,17 @@
  */
 int _find_length(char *s)
 {
-        if (*s == '\0')
-                return (0);
-        s++;
-        return (1 + (_find_length(s)));
+	if (*s == '\0')
+		return (0);
+	s++;
+	return (1 + (_find_length(s)));
 }
-
+/**
+ * _compare - finding root
+ * @a: to check
+ * @b: to check
+ * Return: Always function.
+ */
 int _compare(char *a, char *b)
 {
 	if (a >= b)
@@ -22,8 +27,8 @@ int _compare(char *a, char *b)
 }
 
 /**
- * is_prime_number - function executor
- * @n: to check
+ * is_palindrome - function executor
+ * @s: to check
  * Return: function
  */
 int is_palindrome(char *s)
