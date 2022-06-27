@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * array_range - enters program
- * @min: The character to check
- * @max: The character to check
+ * _realloc - enters program
+ * @ptr: The character to check
+ * @old_size: The character to check
+ * @new_size: The character to check
  * Return: On success array
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
