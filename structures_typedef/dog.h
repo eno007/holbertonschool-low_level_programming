@@ -1,13 +1,16 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * dog - enters program
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
+/**
+ * struct dog - structure for dog
  * @name: The character to check
  * @age: The character to check
  * @owner: The character to check
  * Return: On success array
  */
-typedef struct dog dog_t;
 struct dog
 {
 	char *name;
