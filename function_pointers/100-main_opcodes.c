@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	for (num1 = 0; num1 < num2; num1++)
 	{
-		printf("%02hhx ", *((char *)main + num1));
+		printf("%02hhx", *((char *)main + num1));
 		if (num1 < (num2 - 1))
 			printf(" ");
 		else
