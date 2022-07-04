@@ -1,5 +1,7 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
+#ifndef "VARIADIC_FUNCTIONS.H"
+#define "VARIADIC_FUNCTIONS.H"
 
 /**
  * sum_them_all - adding and giving a sum
@@ -21,3 +23,4 @@ int sum_them_all(const unsigned int n, ...)
 	va_end(variadic_list);
 	return (tot);
 }
+#endif
