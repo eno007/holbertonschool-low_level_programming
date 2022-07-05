@@ -17,33 +17,28 @@ void print_all(const char * const format, ...)
 	va_start(variadic_list, format);
 	
 	while (format && format[i])
-	{
 		i++;
+	while (format && format[n])
+	{
+		if (n == (i - 1))
+			sep = "";
 		switch (format[n])
 		{
-		case 'c': 
-			printf("%c%s", va_arg(variadic_list, int), sep);
-			if (n == (i - 1))
-				sep = "";
-			break;
-		case 'i':
-			printf("%d%s", va_arg(variadic_list, int), sep);
-			if (n == (i - 1))
-				sep = "";
-			break;
-		case 's':
-			str = va_arg(variadic_list, char *);
-			if (str == NULL)
-				str = "(nil)";
-			printf("%s%s", str, sep);
-			if (n == (i - 1))
-				sep = "";
-			break;
-		case 'f':
-			printf("%f%s", va_arg(variadic_list, double), sep);
-			if (n == (i - 1))
-				sep = "";
-			break;
+			case 'c': 
+				printf("%c%s", va_arg(variadic_list, int), sep);
+				break;
+			case 'i':
+				printf("%d%s", va_arg(variadic_list, int), sep);
+				break;
+			case 's':
+				str = va_arg(variadic_list, char *);
+				if (str == NULL)
+					str = "(nil)";
+				printf("%s%s", str, sep);
+				break;
+			case 'f':
+				printf("%f%s", va_arg(variadic_list, double), sep);
+				break;
 		}
 		n++;
 	}
