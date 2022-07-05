@@ -9,13 +9,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list variadic_list;
-	int n = 0; 
+	int n = 0;
 	int i = 0;
 	char *str;
 	char *sep = ", ";
 
 	va_start(variadic_list, format);
-	
 	while (format && format[i])
 		i++;
 	while (format && format[n])
@@ -24,7 +23,7 @@ void print_all(const char * const format, ...)
 			sep = "";
 		switch (format[n])
 		{
-			case 'c': 
+			case 'c':
 				printf("%c%s", va_arg(variadic_list, int), sep);
 				break;
 			case 'i':
