@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_list - structure to print
+ * list_len - structure to print
  * @h: linked list
  * Return: number of nodes
  */
