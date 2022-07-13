@@ -2,7 +2,6 @@
 /**
  * free_list - structure to print
  * @head: linked list pointer
- * 
  */
 void free_list(list_t *head)
 {
