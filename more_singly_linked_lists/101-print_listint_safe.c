@@ -46,7 +46,7 @@ int loop(const listint_t *head)
 		if (new == old)
 			return (1);
 	}
-	return(0);
+	return (0);
 }
 /**
  * print_listint_safe - structure to print
