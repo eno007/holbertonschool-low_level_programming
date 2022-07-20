@@ -3,17 +3,18 @@
  * _strlen - for length
  * @str: string to check
  * Return: Length
- */ 
+*/
 int _strlen(char *str)
 {
 	int len;
+
 	for (len = 0; str[len] != '\0'; len++)
 		;
 	return (len);
 }
 
 /**
- * read_textfile - Process that reads the file
+ * create_file - Process that creates the file
  * @filename: pointer of the filename of the text file that would be read
  * @text_content: length of the letters of the textfile
  * Return: 1 or -1
