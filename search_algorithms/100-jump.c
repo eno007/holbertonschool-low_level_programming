@@ -1,7 +1,7 @@
 #include "search_algos.h"
 /**
  * jump_search - function that does jump search
- * @array: array to be searched 
+ * @array: array to be searched
  * @size: size of the array
  * @value: Value that we want to find
  * Return: index of the array if founded or -1 if not founded
