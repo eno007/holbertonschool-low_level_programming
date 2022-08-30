@@ -38,7 +38,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 }
 
 /**
- * insert_to_sorted_list - compare abcs and insert node into list (for printing)
+ * insert_to_sorted_list - compare abcs and insert node into list
  * @ht: sorted hash table
  * @node: node to insert
  * Return: 1 if success, 0 if fail
@@ -47,26 +47,25 @@ int insert_to_sorted_list(shash_table_t *ht, shash_node_t *node)
 {
 	shash_node_t *tmp;
 
-	/* if empty hash table, initialize head and tail nodes */
 	if (!(ht->shead))
 	{
 		ht->shead = node;
 		ht->stail = node;
 		return (1);
 	}
-	if (strcmp(node->key, (ht->shead)->key) <= 0) /* insert at beginning */
+	if (strcmp(node->key, (ht->shead)->key) <= 0)
 	{
 		node->snext = ht->shead;
 		(ht->shead)->sprev = node;
 		ht->shead = node;
 	}
-	else if (strcmp(node->key, (ht->stail)->key) > 0) /* insert at end */
+	else if (strcmp(node->key, (ht->stail)->key) > 0)
 	{
 		node->sprev = ht->stail;
 		(ht->stail)->snext = node;
 		ht->stail = node;
 	}
-	else /* insert in middle */
+	else
 	{
 		tmp = ht->shead;
 		while (tmp->snext && strcmp(node->key, (tmp->snext)->key) > 0)
@@ -137,11 +136,6 @@ int create_and_add_node(shash_table_t *ht, const char *key, const char *value,
  */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-	/* get index */
-	/* if key already exists, update value and return */
-	/* else create node */
-	/* set ht idx ptr to node; else put in sorted linked list if collision*/
-
 	unsigned long int idx;
 	shash_node_t *node = NULL;
 	char *v;
@@ -178,9 +172,6 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	unsigned long int idx;
 	shash_node_t *tmp;
-
-	/* find index in hash table where key is */
-	/* look through linked list to find matching key for value */
 
 	if (!ht || !key)
 		return (NULL);
@@ -219,7 +210,7 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 /**
- * shash_table_print_rev - print key/values of sorted hashtable in reverse order
+ * shash_table_print_rev - print key/value of sorted hashtable in reverse order
  * @ht: hash table
  */
 void shash_table_print_rev(const shash_table_t *ht)
